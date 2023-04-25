@@ -70,7 +70,7 @@ def show_explore_page():
     
     fig1, ax1 = plt.subplots()
     
-    ax1.pie(data, labels=data.index, shadow=False, startangle=90,radius=0.1, textprops={'fontsize': 6})
+    ax1.pie(data, labels=data.index,  startangle=90,radius=0.1, textprops={'fontsize': 6})
     
     ax1.axis("equal")  # Equal aspect ratio ensures that pie is drawn as a circle.
 
