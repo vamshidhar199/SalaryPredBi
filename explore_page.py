@@ -62,7 +62,7 @@ def show_explore_page():
 
     st.write(
         """
-    ### Stack Overflow Developer Survey 2020
+    ### Stack Overflow Developer Survey 
     """
     )
 
@@ -74,13 +74,13 @@ def show_explore_page():
     
     ax1.axis("equal")  # Equal aspect ratio ensures that pie is drawn as a circle.
 
-    st.write("""#### Number of Data from different countries""")
+    st.write("""#### Data count collected per country""")
 
     st.pyplot(fig1)
     
     st.write(
         """
-    #### Mean Salary Based On Country
+    #### Country Based Mean Salary
     """
     )
 
@@ -89,14 +89,14 @@ def show_explore_page():
 
     st.write(
         """
-    #### Mean Salary Based On Experience
+    #### Experience Based Mean Salary 
     """
     )
 
     data = df.groupby(["YearsCodePro"])["Salary"].mean().sort_values(ascending=True)
     st.line_chart(data, height=600.9, width=80.5)
     
-    st.title("Explore Developers Salaries across Europe")
+    st.title("Developers Salaries")
 
     st.write("""
     ### Median Salaries by Country
