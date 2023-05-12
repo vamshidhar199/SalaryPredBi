@@ -17,7 +17,7 @@ def call_openai_api(question):
         "-H",
         "Content-Type: application/json",
         "-H",
-        f"Authorization: Bearer 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",
+        f"Authorization: Bearer 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",
         "-d",
         json.dumps(data)
     ]
