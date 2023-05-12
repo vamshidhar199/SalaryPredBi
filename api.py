@@ -30,7 +30,7 @@ def call_openai_api(question):
 
     # Print the output and error messages to the console
     response_dict = json.loads(output.decode("utf-8"))
-
+    print(response_dict)
     # Get the messages from the response
     messages = response_dict['choices'][0]['message']['content']
     print("Original Response:")
